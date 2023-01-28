@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
-import NavItem from '../interfaces/navigation/NavItem.interface.ts'
+import NavItem from '../types'
 
 type Props = {
     navList: NavItem[],
@@ -10,10 +10,10 @@ type Props = {
 const Nav = ({navList}: Props) => (
     <nav className={navStyles.nav}>
         <ul>
-            {navList.map(Navitem => {
+            {navList.map((navitem) => {
                 return (
                     <li>
-                        <Link href={NavItem.link}>{NavItem.name}</Link>
+                        <Link href={navitem.link}>{navitem.name}</Link>
                     </li>
                 )
             })}

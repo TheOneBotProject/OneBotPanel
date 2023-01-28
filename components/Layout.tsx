@@ -1,16 +1,21 @@
 import styles from '../styles/Layout.module.css'
-import React from "react";
+import React from "react"
+import Nav from './Nav'
+import NavItem from '../types'
 
 type Props = {
-    navList: string[],
+    navList: NavItem[],
     children: JSX.Element
 }
 
 const Layout = ({ navList, children}: Props) => (
+    <>
+    <Nav navList={navList}/>
     <div className={styles.container}>
         <main className={styles.main}>
             {children}
         </main>
     </div>
+    </>
 )
 export default Layout
