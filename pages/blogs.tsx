@@ -1,4 +1,4 @@
-import Link from 'next/Link'
+import Link from 'next/link'
 // will retrieve a list of blogs from the api and display them in reverse chronological order
 
 export default function blogs() {
