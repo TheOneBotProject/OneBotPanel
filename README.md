@@ -1,3 +1,6 @@
+# Welcome to OneBotPanel
+This is the webapp portion of TheOneBotProject. We'll eventually deploy the webapp sitting in this repository as our official website. We will use this site as the official bridge to the free service and blogs on development updates.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
