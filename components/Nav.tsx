@@ -4,15 +4,15 @@ import NavItem from '../types'
 
 type Props = {
     navList: NavItem[],
-    children: JSX.Element
+    orientation: string
 }
 
-const Nav = ({navList}: Props) => (
-    <nav className={navStyles.nav}>
+const Nav = ({navList, orientation}: Props) => (
+    <nav className={orientation == "horizontal" ? navStyles.nav : navStyles.navHorizontal}>
         <ul>
             {navList.map((navitem) => {
                 return (
-                    <li>
+                    <li key={navitem.name}>
                         <Link href={navitem.link}>{navitem.name}</Link>
                     </li>
                 )

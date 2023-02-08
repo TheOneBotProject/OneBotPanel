@@ -10,12 +10,12 @@ type Props = {
 
 const Layout = ({ navList, children}: Props) => (
     <>
-    <Nav navList={navList}/>
-    <div className={styles.container}>
-        <main className={styles.main}>
-            {children}
-        </main>
-    </div>
+        <Nav navList={navList} orientation="horizontal"/>
+        <div className={styles.container}>
+            <main className={styles.main}>
+                {children}
+            </main>
+        </div>
     </>
 )
 export default Layout

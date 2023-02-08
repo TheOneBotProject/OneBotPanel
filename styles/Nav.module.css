@@ -1,11 +1,15 @@
 .nav {
-    height: 50px;
+    height: 20px;
     padding: 10px;
     background: gray;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.navHorizontal {
+
 }
 
 .nav ul {
@@ -16,7 +20,15 @@
 }
 
 .nav ul li a {
-    margin: 5px 15px;
+    margin: 3px 15px;
     font-family: var(--font-mono);
-    font-size: 1.25rem;
+    font-size: .75rem;
+}
+
+.nav a {
+    display: block;
+}
+
+.nav li:hover {
+    background: lightgray;
 }
