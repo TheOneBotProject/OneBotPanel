@@ -11,7 +11,7 @@ type Props = {
 const Layout = ({ navList, children}: Props) => (
     <>
         <Nav navList={navList} orientation="horizontal"/>
-        <div className={styles.container}>
+        <div /*className={styles.container}*/>
             <main className={styles.main}>
                 {children}
             </main>

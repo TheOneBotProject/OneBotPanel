@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
+import dashStyles from '../styles/Dashboard.module.css'
 import NavItem from '../types'
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
 }
 
 const Nav = ({navList, orientation}: Props) => (
-    <nav className={orientation == "horizontal" ? navStyles.nav : navStyles.navHorizontal}>
+    <nav className={navS(orientation)}>
         <ul>
             {navList.map((navitem) => {
                 return (
@@ -21,3 +22,10 @@ const Nav = ({navList, orientation}: Props) => (
     </nav>
 )
 export default Nav
+
+function navS(orientation: string): string{
+    if (orientation == "horizontal")
+        return navStyles.nav
+    else
+        return dashStyles.sidebar
+}

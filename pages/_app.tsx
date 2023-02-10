@@ -1,13 +1,13 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Layout from "@/components/Layout";
-import {NavItem} from '../types'
+import NavItem from '../types'
 
 export default function App({ Component, pageProps }: AppProps) {
   const nList: NavItem[] = [
       {
          name: 'home',
-         link: '/' 
+         link: '/'
       }, {
           name: 'about',
           link: '/about'

@@ -1,0 +1,26 @@
+.sidebar {
+    height: 100%;
+    padding-top: 10px;
+    position: fixed;
+    width: fit-content;
+    background: gray;
+    color: #fff;
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar ul {
+    display: block;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    margin: 3px 15px;
+    font-family: var(--font-mono);
+    font-size: .75rem;
+}
+
+.main {
+    margin-left: ;
+}
