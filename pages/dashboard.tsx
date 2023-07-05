@@ -1,13 +1,12 @@
 import DashboardLayout from '@/components/DashboardLayout'
-import Nav from '../components/Nav'
-import NavItem from '../types'
+import style from '../../styles/Dashboard.module.css'
 
 export default function dashboard() {
     return (
-        <div>
+        <>
             <DashboardLayout>
                 <h1>Dasboard</h1>
             </DashboardLayout>
-        </div>
+        </>
     )
 }

@@ -1,10 +1,9 @@
-import styles from '@/styles/Layout.module.css'
 import Typewriter from 'typewriter-effect'
 
 export default function Typewriters() {
     return (
         <div>
-            <h1>
+            <h1 className='text-slate-50'>
                 <Typewriter
                     options={{
                         autoStart: true,
