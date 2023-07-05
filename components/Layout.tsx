@@ -25,7 +25,7 @@ type Props = {
 
 const Layout = ({navList, className}: Props) => (
     <div className={className}>
-        <Nav navList={navList} orientation="horizontal" className='fixed left-0 top-0 w-full z-10 ease-in duration-300'/>
+        <Nav navList={navList} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'/>
     </div>
 )
 export default Layout

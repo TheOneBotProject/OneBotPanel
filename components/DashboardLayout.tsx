@@ -21,8 +21,8 @@ type Props = {
 export default function DashboardLayout({children}: Props) {
     return (
         <>
-            <Nav navList={dList} orientation="vertical" />
-            <div>
+            <Nav navList={dList}/>
+            <div className='mt-4'>
                 <main>
                     {children}
                 </main>

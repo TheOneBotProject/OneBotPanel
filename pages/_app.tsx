@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
         <Nav navList={navList} className='fixed h-8 shadow-xl w-full z-30 bg-zinc-700'/>
-        <Component {...pageProps} />
+        <Component className='mt-6' {...pageProps} />
     </>
   )
 }

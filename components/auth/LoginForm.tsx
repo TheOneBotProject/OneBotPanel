@@ -25,17 +25,20 @@ const LoginForm: React.FC<LoginFormProps> = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen text-xs">
+    <div className="flex justify-center items-center h-fit text-xs">
       <form onSubmit={handleLogin} className="rounded-lg shadow-lg p-3">
         <label className="block mb-2">
           Username:
-          <input type="text" value={username} onChange={handleUsernameChange} className="block border border-gray-300 rounded-lg px-4 py-1 w-full" />
+          <input type="text" value={username} onChange={handleUsernameChange} className="block border border-gray-300 rounded-lg px-4 py-1 w-full" autoFocus/>
         </label>
         <label className="block mb-2">
           Password:
           <input type="password" value={password} onChange={handlePasswordChange} className="block border border-gray-300 rounded-lg px-4 py-1 w-full" />
         </label>
-        <button type="submit" className="bg-emerald-500 hover:bg-blue-600 text-white rounded-lg px-4 py-1">Login</button>
+        <div className='grid grid-cols-3 items-center gap-x-1'>
+          <button type="submit" className="bg-emerald-500 hover:bg-blue-600 text-white rounded-lg px-4 py-1">Login</button>
+          <Link href={"/signup"} className='hover:text-white'>Sign up</Link>
+        </div>
         <p className="mt-2 mb-1">Or log in with:</p>
         <Link href="/" className="bg-purple-700 hover:bg-purple-600 text-white font-semibold rounded-lg flex items-center"><img src='TwitchGlitchWhite.svg' className='scale-[1.5] bg-inherit h-3 m-2'/>Log in with Twitch</Link>
       </form>
